@@ -10,23 +10,6 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_01_19_174541) do
-
-  create_table "magazines", force: :cascade do |t|
-    t.string "title"
-  end
-
-  create_table "readers", force: :cascade do |t|
-    t.string "name"
-    t.string "email"
-  end
-
-  create_table "subscriptions", force: :cascade do |t|
-    t.integer "price"
-    t.integer "magazine_id"
-    t.integer "reader_id"
-    t.index ["magazine_id"], name: "index_subscriptions_on_magazine_id"
-    t.index ["reader_id"], name: "index_subscriptions_on_reader_id"
-  end
+ActiveRecord::Schema.define(version: 0) do
 
 end
